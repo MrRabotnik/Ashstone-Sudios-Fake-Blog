@@ -1,0 +1,61 @@
+.post {
+    width: 30%;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 1rem rgb(236, 236, 236);
+    }
+
+    .post-banner-container {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-container {
+        box-sizing: border-box;
+
+        .tags {
+            color: #eb0028;
+            font-size: 0.7rem;
+        }
+
+        .post-stats-container {
+            display: flex;
+            align-items: center;
+
+            & > span {
+                margin-right: 0.5rem;
+                font-size: 0.7rem;
+                color: #9b9b9b;
+                display: flex;
+                align-items: center;
+            }
+
+            .author {
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        .description {
+            color: #929292;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .post {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .post {
+        width: 100%;
+        margin-right: 0;
+    }
+}

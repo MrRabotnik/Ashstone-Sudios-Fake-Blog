@@ -1,0 +1,17 @@
+main {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+
+        .posts-container {
+            padding: 3rem 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            .post {
+                margin-bottom: 40px;
+                margin-right: 31px;
+            }
+        }
+    }
+}
